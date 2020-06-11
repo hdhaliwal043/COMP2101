@@ -38,5 +38,5 @@ echo ""
 
 echo "10 largest files:"
 echo "=============:"
-find / -type f -execu du -h {} + 2>/dev/null | sort -h -r | head -n 10
+find / -type f -executable 2>/dev/null | du -a /home | sort -n -r | head -n 10
 echo ""
